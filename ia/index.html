@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/img/logo.png">
+
+    <title>Mork AI</title>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="div1">
+            <button onclick="toggleMenu()">
+                <img src="/img/menu.png">
+            </button>
+            <div id="menu">
+
+                <a href="/" style="text-decoration: none; color: white;">Inicio</a>
+                <a href="/#contacto" style="text-decoration: none; color: white;">Ayuda</a>
+
+            </div>
+            <script>
+                function toggleMenu() {
+                    const menu = document.getElementById('menu');
+                    menu.classList.toggle('mostrar');
+                }
+            </script>
+        </div>
+
+
+
+        <div class="div2"></div>
+        <div class="div3"></div>
+    </div>
+    <div class="bienvenido">
+        <h1>Bienvenido a MorkAI</h1>
+        <div id="escritor" class="cursor">Simple pero</div>
+        <script src="script.js"></script>
+    </div>
+
+    <div class="preguntar">
+        <input type="text" id="search-input" placeholder="Escribe tu pregunta..."
+            style="width: 450px; height: 45px; border-radius: 10px; background-color: #424242; color: white; border: none;">
+        <button onclick="enviarPregunta()" style="color: white;"><img src="/img/enviar.png" draggable="false"
+                style="border-radius: 100px; height: 40px;"></button>
+        <div id="respuesta"></div>
+    </div>
+
+
+</body>
+
+</html>
